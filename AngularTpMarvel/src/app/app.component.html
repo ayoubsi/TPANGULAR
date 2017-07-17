@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+  <!-- stylesheet css-->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/appstyle.css">
+  <!-- google web font css -->
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<!-- navigation -->
+<div class="container">
+  <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="navbar-header">
+      <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon icon-bar"></span>
+        <span class="icon icon-bar"></span>
+        <span class="icon icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand"><img src="assets/images/logo.png" class="img-responsive" alt="logo"></a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a routerLink="/" class="active">HOME</a></li>
+        <li><a routerLink="/data">DATA</a></li>
+        <li><a href="/about">A PROPOS</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- home section -->
+<div id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-sm-3"></div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
+
+<!-- footer section -->
+<footer>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-5 col-sm-4">
+        <img src="assets/images/logo.png" class="img-responsive" alt="logo">
+        <p>Copyright Team Phenyouvickman <br>
+        Sabir Idrissi Ayoub<br>
+        Phen LY
+        Vicko</p>
+      </div>
+
+      <div class="col-md-3 col-sm-4">
+        <h3>Liens Utils</h3>
+        <p><a href="https://cli.angular.io/">Angular CLI</a></p>
+        <p><a href="https://developer.marvel.com">Marvel tools for developer</a></p>
+        <p><a href="http://marvel.com/">Comics</a></p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<!-- javascript js -->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/nivo-lightbox.min.js"></script>
+<script src="assets/js/custom.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,25 @@
+<div *ngFor="let hero of heroes">
+  <h3 style="margin-top:3%;">{{hero.name}}</h3>
+  <br>
+  <div>
+    <div class="card card-hero">
+      <div class="card-image">
+        <img src="{{hero.thumbnail.path}}.{{hero.thumbnail.extension}}" alt="">
+        <div class="card-action">
+          <h3>Description</h3>
+          <p>{{hero.description}}</p>
+          <br>
+          <h3>Comics</h3>
+          <ul style="list-style-type:none;" class="strokeme">
+            <li *ngFor="let value of hero.comics.items">{{value.name}}</li>
+          </ul>
+
+          <h3>Séries</h3>
+          <ul class="strokeme" style="list-style-type:none;">
+            <li *ngFor="let item of hero.series.items">{{item.name}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

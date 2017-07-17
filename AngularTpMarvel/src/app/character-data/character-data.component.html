@@ -1,0 +1,16 @@
+
+<div id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8 col-sm-12">
+        <app-search-form (charNameForFav)="onAddFavoris($event)" (charName)="onHeroesSearch($event)"></app-search-form>
+        <app-favoris-option [favoris]="favoris" (charName)="onHeroesSearch($event)"></app-favoris-option>
+        <app-character [heroes]="heroes"></app-character>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
